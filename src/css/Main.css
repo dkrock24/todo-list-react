@@ -1,0 +1,31 @@
+.listItems {
+    /*background: #f7f0f0;*/
+    list-style: none;
+    padding: 4px;
+}
+
+.button-align {
+    display: inline-block;
+    float: right;
+}
+
+.marco {
+    margin: 10%;
+}
+
+.logo {
+    width: 90%;
+}
+
+.create-section {
+    background: #fbfaff;
+    color: black;
+    border-radius: 5px solid grey;
+    border: 1px solid green;
+    box-shadow: 5px 10px rgb(207, 205, 205);
+}
+
+.true {
+    color:white;
+    background-color: green;
+}
