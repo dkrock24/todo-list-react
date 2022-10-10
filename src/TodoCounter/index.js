@@ -1,5 +1,4 @@
 import React from 'react';
-import { TodoContext } from '../TodoContext';
 import './TodoCounter.css';
 
 const estilo = {
@@ -7,12 +6,7 @@ const estilo = {
     backgroundColor: 'grey'
 }
 
-function TodoCounter( ) {
-    
-    const {
-        totalTodos,
-        completedTodos
-    } = React.useContext(TodoContext);
+function TodoCounter( {totalTodos, completedTodos, loading} ) {
 
     return (
         <div className="container-fluid fondo">
@@ -23,7 +17,10 @@ function TodoCounter( ) {
             </div>
              <div className="row">
 			    <div className="col-12">
-                    <h2 className="TodoCounter">Completed {completedTodos} to {totalTodos}</h2>
+                    <h2 className={
+                        `TodoCounter ${!!loading && "TodoCounter--loading"}`}>
+                        Completed {completedTodos} to {totalTodos}
+                    </h2>
                 </div>
             </div>
         </div>

@@ -24,6 +24,14 @@
   color: white;
 }
 
+.TodoSearch:disabled {
+  opacity: 0.2  ;
+}
+
+.TodoCounter--loading {
+  opacity: 25%;
+}
+
 .App-link {
   color: #61dafb;
 }
